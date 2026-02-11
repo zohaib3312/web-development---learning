@@ -1,0 +1,81 @@
+/* .parent {
+  width: 80%;
+  height: 200px;
+  background: lightgray;
+}
+
+.child {
+  width: 50%;
+  height: 50%;
+  background: coral;
+} */
+
+
+
+/* html {
+  font-size: 12px;
+}
+
+.parent {
+  font-size: 20px;
+}
+
+.em-text {
+  font-size: 2em;
+}
+
+.rem-text {
+  font-size: 2rem;
+} */
+
+
+/* *{
+    padding: 0;
+    margin: 0;
+ 
+
+} */
+/* .hero {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+ 
+} */
+
+
+/* css variable pratice */
+
+:root{
+
+--primary-color:rgb(255, 0, 191);
+--secondary-color:rgb(116, 180, 148);
+--large-font-size:2rem;
+--padding-size:50px;
+}
+
+h1{
+  color: var(--primary-color);
+  font-size: var(--large-font-size);
+  padding: var(--padding-size);
+  
+}
+
+
+p{
+  color: var(--secondary-color);
+
+}
+
+button{
+  background: var(--primary-color);
+  color: white;
+  padding: var(--padding-size);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
