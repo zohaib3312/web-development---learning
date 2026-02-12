@@ -49,7 +49,7 @@
 
 /* css variable pratice */
 
-:root{
+/* :root{
 
 --primary-color:rgb(255, 0, 191);
 --secondary-color:rgb(116, 180, 148);
@@ -78,4 +78,23 @@ button{
   border-radius: 5px;
   cursor: pointer;
 }
+ */
 
+ 
+ /* @media screen  and (max-width: 600px) 
+ { 
+  
+  .change-color{ background: red; }
+  
+ }
+  */
+
+p{
+  font-size: 24px;
+}
+
+  @media screen and(max-width: 768px) {
+    p{
+      font-size: 16px;
+    }
+  }
