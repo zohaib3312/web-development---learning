@@ -89,7 +89,7 @@ button{
  }
   */
 
-p{
+/* p{
   font-size: 24px;
 }
 
@@ -97,4 +97,215 @@ p{
     p{
       font-size: 16px;
     }
-  }
+  } */
+
+
+
+
+   * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+
+        .exercise {
+            background: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .exercise h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .goal {
+            background: #fffbea;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #f39c12;
+        }
+
+        .container {
+            border: 2px solid #333;
+            padding: 10px;
+            margin: 20px 0;
+            min-height: 200px;
+            background: #e8e8e8;
+        }
+
+        .item {
+            background: #3498db;
+            color: white;
+            padding: 20px;
+            margin: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Exercise 1 */
+        .ex1-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        /* Exercise 2 */
+        .ex2-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Exercise 3 */
+        .ex3-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        /* Exercise 4 */
+        .ex4-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Exercise 5 */
+        .ex5-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Exercise 6 */
+        .ex6-container {
+            display: flex;
+            flex-flow: row-reverse;
+        }
+
+        /* Exercise 7 */
+        .ex7-container {
+            display: flex;
+            align-items: start;
+
+        }
+
+        .ex7-item-2 {
+            align-self: flex-end;
+        }
+
+        /* Exercise 8 */
+        .ex8-container {
+            display: flex;
+            
+        }
+        .ex8-container .item {
+            flex: 1;
+            
+        }
+
+        /* Exercise 9 */
+        .ex9-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Exercise 10 */
+        .ex10-container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        /* Exercise 11 */
+        .ex11-container {
+            /* Your code here */
+        }
+
+        /* Exercise 12 */
+        .ex12-container {
+            /* Your code here */
+        }
+
+        .ex12-left {
+            /* Your code here */
+        }
+
+        .ex12-center {
+            /* Your code here */
+        }
+
+        .ex12-right {
+            /* Your code here */
+        }
+
+        /* Exercise 13 */
+        .ex13-container {
+            /* Your code here */
+        }
+
+        .ex13-header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        .ex13-content {
+            /* Your code here */
+        }
+
+        .ex13-sidebar {
+            background: #95a5a6;
+            padding: 20px;
+            /* Your code here */
+        }
+
+        .ex13-main {
+            background: #ecf0f1;
+            padding: 20px;
+            /* Your code here */
+        }
+
+        .ex13-footer {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Exercise 14 */
+        .ex14-container {
+            /* Your code here */
+        }
+
+        .ex14-card {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            /* Your code here */
+        }
+
+        /* Exercise 15 */
+        .ex15-container {
+            /* Your code here */
+        }
+
+        .ex15-item-1 {
+            /* Your code here */
+        }
+
+        .ex15-item-2 {
+            /* Your code here */
+        }
+
+        .ex15-item-3 {
+            /* Your code here */
+        }
