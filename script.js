@@ -184,9 +184,29 @@
 
 // exercise 3 — check if "5" === 5 and "5" == 5, print both results and tell me what you notice
 
+// let a = "5";
+// let b = 5;
 
-
+//  console.log(a === b); // false check value with type 
+//  console.log(a == b); // true check only value
  
+
+// exercise 4 — create a variable temperature, if above 30 print "hot", between 20 and 30 print "normal", below 20 print "cold" 
+
+// let temperature = 25;
+
+// if (temperature > 30) { // false
+//     console.log("hot"); 
+// }else if(temperature >= 20 && temperature <=30){ // true
+// console.log("normal"); 
+// }else{
+//     console.log("cold")
+// }
+
+// // output Normal  
+
+
+
 
 
 
