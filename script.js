@@ -157,20 +157,55 @@
 //  exercise 10 — the last one!
 // Write one example of null and one example of undefined with a comment explaining why you used each one
 
-
 //null is intiontilly leave the varialbe empthy 
 // undefined mean varialbe is declared but not assign any value or forget to assign the value
-
-
 
 // let car; //undefined 
 // let name = null // intionlly leave empthy 
 
+// Create two variables a = 15 and b = 4. Print the result of all arithmetic operators including remainder %.
 
+// let a = 15;
+// let b = 4;
+// console.log("Additon" , a+b); // 19
+// console.log("subtraction" ,a-b); // 11
+// console.log("multiplication" ,a*b); // 60
+// console.log("Division" ,a/b); // 3.75
+// console.log("Reminder" ,a % b); // 3
+
+
+// exercise 2 — create a variable score = 10, use += to add 5 to it and print the result 
+
+// let score = 10; // 10 
+// score += 5; // score = score + 5;
+// console.log(score) // 15 
+
+
+
+// exercise 3 — check if "5" === 5 and "5" == 5, print both results and tell me what you notice
 
 
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
