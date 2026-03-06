@@ -205,17 +205,48 @@
 
 // // output Normal  
 
+// Create an object for a student with:
+// - name
+// - marks
+// - age
+// - isPassed (boolean)
+
+// Then:
+// 1. Print student name using template literal
+// 2. Use if else to print their grade (A, B, C, D, Fail)
+// 3. Use ternary to print "Passed" or "Failed"
+// 4. Use && to check if student is above 18 AND passed
+//    → print "Eligible for scholarship" or "Not eligible"
 
 
+// let student = {
+//     name : "zohaib",
+//     marks: 60,
+//     age: 25,
+//     isPassed : true
+// }
 
+// console.log(`My name is ${student.name}`);
+// if (student.marks >= 90){
+//     console.log("A Grade");
 
+// }else if(student.marks >= 80){
+//     console.log("B Grade")
+// }else if(student.marks >= 70){
+//     console.log("C Grade")
+// }else if(student.marks >= 60){
+//     console.log("D Grade")
+// }else{
+//     console.log("Fail")
+// }
+    
+// console.log(student.isPassed ? "Passed":"Failed");
 
-
-
-
-
-
-
+// if (student.age >= 18 && student.isPassed) {
+//     console.log("Eligible for scholarship");
+// }else{
+//     console.log("Not eligible");
+// }
 
 
 
