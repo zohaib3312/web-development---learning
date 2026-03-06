@@ -206,12 +206,69 @@
 // // output Normal  
 
 
+// Exercise 5 — grading system:
+// Create a variable marks and write a grading system:
+// 90 and above  →  print "A grade"
+// 80 to 89      →  print "B grade"
+// 70 to 79      →  print "C grade"
+// 60 to 69      →  print "D grade"
+// below 60      →  print "Fail"
+
+// let marks = 66;
+
+// if (marks >= 90) {
+//     console.log("A grade");
+// }else if(marks >= 80){
+// console.log("B grade")
+// }else if(marks >= 70 ){
+// console.log("C grade")
+// }else if(marks >= 60 ){
+// console.log("D grade")
+// }else{
+// console.log("Fail")
+// }
+
+// output  D
+
+// using ternory operator 
+// above 30   →  print "hot"
+// 30 or below →  print "cold"
+
+
+// let a = 30;
+// console.log(a >= 30 ? "hot": "cold"); // hot 
+
+
+// Exercise 7 — use ternary to print "Welcome back!" or "Please login":
+
+// let islogin = true;
+// console.log(islogin ? "Welcome back!":"please Login");
 
 
 
+// exercise 8 — use && to check if someone can enter a club:
+// // must be over 18 AND have ID to enter
+// // print "Welcome in!" or "Sorry you cannot enter"
 
+// let age = 20;
+// const hasID = true;
+// if (age >= 18 && hasID ) {
+//     console.log("Welcome in!");
+// }else{
+//     console.log("sorry you cannot enter");
+// }
 
+// member OR has invite → can enter
+// print "Welcome to the party!" or "Sorry you cannot enter"
 
+// let isMember = false;
+// let hasInvite = true;
+
+// if (isMember || hasInvite ) {
+//     console.log("Welcome to the party!");
+// }else{
+//     console.log("Sorry you cannot enter")
+// }
 
 
 
