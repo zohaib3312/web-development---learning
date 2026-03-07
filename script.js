@@ -271,6 +271,22 @@
 // }
 
 
+// exercise 2 — print only even numbers from 1 to 20 using for loop.
+// for (let number = 1; number<= 20; number++) {
+//     if (number % 2 === 0) {
+//      console.log(number)
+//  };
+// }  
+
+
+
+// exercise 3 — print numbers from 10 to 1 backwards.
+
+for (let i = 1; i<=10 ; i--) {
+   console.log(i)
+    
+}
+
 
 
 
