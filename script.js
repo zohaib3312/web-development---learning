@@ -260,16 +260,85 @@
 
 // exercise 3 — print numbers from 10 to 1 backwards.
 
-for (let i = 1; i<=10 ; i--) {
-   console.log(i)
+
+
+// for (let i = 10; i >= 1; i--) {
+//  console.log(i);
+   
+// }
+
+
+// exercise 4 — print numbers 1 to 5 using while loop
+
+// let i = 1;
+
+// while (i <= 5) {
+// console.log(i)
+//    i++
+// }
+
+
+// score counter using while loop:
+
+// let score = 0;
+
+// while (score < 50 ) {
+//    score += 10;
+//    console.log(score)
+// }
+
+
+
+//  exercise 6 — create an array of 5 city names, print each one using for of:
+
+// let country = ["Pakistan", "India", "England", "Australia", "Canada"];
+
+// for (let i  of country) {
+//    console.log(i)
+// }
+
+
+
+// Exercise 7 — create an array of numbers, print each number multiplied by 2:
+
+// let numbers = [5,2,6,9,4];
+
+// for (let number of numbers) {
+//    console.log(number*2)
+// }
+
+
+
+
+// Exercise 8 — create a student object with 4 fields, print every key and value using for in:
+
+// let students  = {
+//    name : "zohaib",
+//    age : 25,
+//    education: "Bs Computer science",
+//    rollNo: "5664646464" 
+// }
+
+
+// for (let key in students) {
     
+//    console.log(key, students[key])
+    
+     
+// }
+
+
+// Create an array of marks for 5 students, use for loop to print pass or fail for each student:
+
+
+let marks = [30,55,20,40,90];
+for (let i = 0; i < 5; i++) {
+if (marks[i] >= 50) {
+   console.log("Pass")
+}else{
+   console.log("Fail")
+}     
 }
-
-
-
-
-
-
 
 
 
