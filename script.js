@@ -331,20 +331,94 @@
 // Create an array of marks for 5 students, use for loop to print pass or fail for each student:
 
 
-let marks = [30,55,20,40,90];
-for (let i = 0; i < 5; i++) {
-if (marks[i] >= 50) {
-   console.log("Pass")
-}else{
-   console.log("Fail")
-}     
-}
+// let marks = [30,55,20,40,90];
+// for (let i = 0; i < 5; i++) {
+// if (marks[i] >= 50) {
+//    console.log("Pass")
+// }else{
+//    console.log("Fail")
+// }     
+// }
+
+
+// console.log("hello")
+
+// exercise 1 — write a function called greet that takes a name and prints "Hello Zohaib!" using template literal! 
+// function greet(name) {
+//     console.log(`Hello ${name}`)
+// }
+// greet("zohaib");
 
 
 
+// exercise 2 — write a function called add that takes two numbers and returns their sum. Print the result:
+
+// function add(a , b){
+//     return a+b;
+// }
+
+// let result = add(5,10);
+
+// console.log(result);
 
 
 
+//  exercise 3 — write a function called isEven that takes a number and returns true if even, false if odd:
 
+
+// function isEven(number) {
+//      return number % 2 === 0;
+// }
+
+// let result1 = isEven(2);
+// console.log(result1);
+// let result2 = isEven(5);
+// console.log(result2);
+
+// Exercise 4 — write a function called getGrade that takes marks and returns the grade:
+
+// function getGrade(number) {
+//     if (number >=90) {
+//         return "A Grade"
+//     }else if(number >= 80){
+//         return "B Grade"
+//     }else if(number >= 70){
+//         return "C Grade"
+//     }else if(number >= 60){
+//         return "D Grade"
+//     }else{
+//         return "Fail"
+//     }
+// }
+
+// let result1 = getGrade(55);
+// console.log(result1)
+
+// let result2 = getGrade(60);
+// console.log(result2)
+
+// Now try exercise 5 — write a function called canVote that takes age and returns "Can vote" or "Cannot vote":
+
+// function canVote(age) {
+//     if (age >= 18) {
+//         return "Can Vote"
+//     }else{
+//         return "Cannot Vote"
+//     }
+// }
+
+// let result1 = canVote(25);
+// console.log(result1)
+// let result2 = canVote(12);
+// console.log(result2)
+
+
+
+//  exercise 6 — rewrite your add function as an arrow function:
+
+// const add = (a , b) => a + b; 
+// let result1 = add(5 , 5);
+// let result2 = add(8 , 5);
+// console.log(result2)
 
 
