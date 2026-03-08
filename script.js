@@ -422,3 +422,46 @@
 // console.log(result2)
 
 
+// Exercise 7 — rewrite canVote as an arrow function:
+
+// const canVote = (age) =>{
+//     if (age >= 18) {
+//         return "Can Vote"
+//     }else{
+//         return "Cannot Vote"
+//     }
+// }
+
+// let result = canVote(25);
+// let result2 = canVote(12)
+// console.log(result2)
+
+
+const calculator = (a,b,operators) =>{
+     if (operators === "+") {
+        return a + b;
+     }else if( operators === "-"){
+        return a - b;
+    
+     }else if( operators === "*"){
+        return a * b;
+    
+     }else if( operators === "/"){
+        if (b === 0) {
+            return "Cannot divide by zero";
+        }
+    
+        return a / b;
+     }
+}
+
+let result = calculator(5,6,"+");
+let result1 = calculator(10,6,"-");
+let result2 = calculator(5,20,"/");
+let result3 = calculator(5,0,"/");
+let result4 = calculator(5,6,"*");
+console.log(result)
+console.log(result1)
+console.log(result2)
+console.log(result3)
+console.log(result4)
