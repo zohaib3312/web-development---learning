@@ -437,31 +437,67 @@
 // console.log(result2)
 
 
-const calculator = (a,b,operators) =>{
-     if (operators === "+") {
-        return a + b;
-     }else if( operators === "-"){
-        return a - b;
+// const calculator = (a,b,operators) =>{
+//      if (operators === "+") {
+//         return a + b;
+//      }else if( operators === "-"){
+//         return a - b;
     
-     }else if( operators === "*"){
-        return a * b;
+//      }else if( operators === "*"){
+//         return a * b;
     
-     }else if( operators === "/"){
-        if (b === 0) {
-            return "Cannot divide by zero";
-        }
+//      }else if( operators === "/"){
+//         if (b === 0) {
+//             return "Cannot divide by zero";
+//         }
     
-        return a / b;
-     }
-}
+//         return a / b;
+//      }
+// }
 
-let result = calculator(5,6,"+");
-let result1 = calculator(10,6,"-");
-let result2 = calculator(5,20,"/");
-let result3 = calculator(5,0,"/");
-let result4 = calculator(5,6,"*");
-console.log(result)
-console.log(result1)
-console.log(result2)
-console.log(result3)
-console.log(result4)
+// let result = calculator(5,6,"+");
+// let result1 = calculator(10,6,"-");
+// let result2 = calculator(5,20,"/");
+// let result3 = calculator(5,0,"/");
+// let result4 = calculator(5,6,"*");
+// console.log(result)
+// console.log(result1)
+// console.log(result2)
+// console.log(result3)
+// console.log(result4)
+
+// Create a string with your full name. Print it in uppercase and lowercase.
+// let userName = "zohaib akhtar";
+ 
+// console.log(userName.toUpperCase());
+// console.log(userName.toLowerCase());
+
+// Exercise 2 — create a string with extra spaces, remove them and print it:
+
+// let word = " pakistan  "
+// console.log(word.trim());
+
+
+// Exercise 3 Create a variable with someone's email. Check if it is a Gmail account using includes(). Print "Valid Gmail" or "Not Gmail".
+//  
+
+
+// let userEmail = "za809475@gmail.com";
+//  let verify= userEmail.includes("@gmail.com");
+//  if (verify) {
+//    console.log("Valid Gmail")
+//  }else{
+//    console.log("Not Gmail")
+//  }
+
+
+
+
+// Create a full name "zohaib akhtar". Extract first name and last name separately using slice() and indexOf().
+
+let myName = "Akhtar Ali";
+let spacepostion = myName.indexOf(" ");
+let firstName = myName.slice(0,spacepostion);
+let lastName = myName.slice(spacepostion + 1);
+  console.log(firstName);
+  console.log(lastName);
