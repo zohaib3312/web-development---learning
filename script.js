@@ -495,9 +495,34 @@
 
 // Create a full name "zohaib akhtar". Extract first name and last name separately using slice() and indexOf().
 
-let myName = "Akhtar Ali";
-let spacepostion = myName.indexOf(" ");
-let firstName = myName.slice(0,spacepostion);
-let lastName = myName.slice(spacepostion + 1);
-  console.log(firstName);
-  console.log(lastName);
+// let myName = "Akhtar Ali";
+// let spacepostion = myName.indexOf(" ");
+// let firstName = myName.slice(0,spacepostion);
+// let lastName = myName.slice(spacepostion + 1);
+//   console.log(firstName);
+//   console.log(lastName);
+
+// let myName1 = "wahab hussain";
+// let spacepostion1 = myName1.indexOf(" ");
+// let firstName1 = myName1.slice(0,spacepostion1);
+// let lastName1 = myName1.slice(spacepostion1 + 1);
+//   console.log(firstName1);
+//   console.log(lastName1);
+
+
+
+// exercise 5 — create a string "I love Python and Python is great". Replace both occurrences of Python with JavaScript.
+// let text = "I love Python and Python is great";
+//  console.log(text.replaceAll("Python","Javascript"));
+
+
+
+// exercise 6** — create a string of 5 Pakistani cities separated by commas, split into array, loop through it and print each city in uppercase:
+
+let cities = "karachi,lahore,islamabad,peshawar,quetta";
+let city = cities.split("[,]");
+for (let i = 0; i <= 5; i++) {
+    
+   console.log(city[i].toUpperCase())
+   
+}
