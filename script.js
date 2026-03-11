@@ -519,10 +519,56 @@
 
 // exercise 6** — create a string of 5 Pakistani cities separated by commas, split into array, loop through it and print each city in uppercase:
 
-let cities = "karachi,lahore,islamabad,peshawar,quetta";
-let city = cities.split("[,]");
-for (let i = 0; i <= 5; i++) {
+// let cities = "karachi,lahore,islamabad,peshawar,quetta";
+// let city = cities.split(",");
+// for (let i = 0; i <  5; i++) {
     
-   console.log(city[i].toUpperCase())
+//    console.log(city[i].toUpperCase())
    
+// }
+
+
+
+// Build a function called validateEmail that:
+
+// Takes an email as parameter
+// Checks if it contains "@"
+// Checks if it ends with ".com"
+// Returns "Valid email" or "Invalid email"
+
+// function validateEmail(email) {
+   
+//    if (email.includes("@") && email.endsWith(".com")) {
+//       return "valid email"
+//    }else{
+//       return "Invalid email"
+//    }
+// }
+
+// let result = validateEmail("za809475@gmail.com");
+// console.log(result)
+
+
+
+
+let first,second;
+let rand1 = Math.floor(Math.random()*3)
+let rand2 = Math.floor(Math.random()*3)
+
+if (rand1 === 0) {
+   first = "Tech";
+}else if(rand1 === 1){
+   first = "Smart";
+}else{
+   first = "Digital"
 }
+
+if (rand2 === 0) {
+   second = "Hub";
+}else if(rand2 === 1){
+   second = "Store";
+}else{
+   second = "Zone"
+}
+
+console.log(`${first}${second}`);
