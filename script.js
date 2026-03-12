@@ -551,24 +551,99 @@
 
 
 
-let first,second;
-let rand1 = Math.floor(Math.random()*3)
-let rand2 = Math.floor(Math.random()*3)
+// let first,second;
+// let rand1 = Math.floor(Math.random()*3)
+// let rand2 = Math.floor(Math.random()*3)
 
-if (rand1 === 0) {
-   first = "Tech";
-}else if(rand1 === 1){
-   first = "Smart";
-}else{
-   first = "Digital"
-}
+// if (rand1 === 0) {
+//    first = "Tech";
+// }else if(rand1 === 1){
+//    first = "Smart";
+// }else{
+//    first = "Digital"
+// }
 
-if (rand2 === 0) {
-   second = "Hub";
-}else if(rand2 === 1){
-   second = "Store";
-}else{
-   second = "Zone"
-}
+// if (rand2 === 0) {
+//    second = "Hub";
+// }else if(rand2 === 1){
+//    second = "Store";
+// }else{
+//    second = "Zone"
+// }
 
-console.log(`${first}${second}`);
+// console.log(`${first}${second}`);
+
+
+// let arr = [1,2,3,4,5];
+// console.log(arr)
+// arr[1] = "zohaib"
+// console.log(arr)
+// let arr2 = "karachi";
+// arr2[1] = "w";
+// console.log(arr2);
+
+
+// Exercise 1 — Create an array of 5 fruits:
+
+// Print the first item
+// Print the last item
+// Print the array length
+
+
+
+// let fruits = ["mango", "apple", "banana", "grape", "orange"];
+// console.log(fruits[0]);
+// console.log(fruits[fruits.length-1]);
+// console.log(fruits[4]);
+// console.log(fruits.length)
+
+
+
+//  exercise 2 — create array of 3 cities, then:
+
+// Add city at end
+// Add city at beginning
+// Remove one from end
+// Remove one from beginning
+// Print array after each step
+
+// let city = ["karachi","lahore","multan"];
+// city.push("islamaband");
+// console.log(city);
+// city.unshift("peshawar");
+// console.log(city);
+// city.pop();
+// console.log(city);
+// city.shift();
+// console.log(city);
+
+// Now exercise 3 — harder this time!
+// Create an array of 7 numbers. Use slice to:
+
+// Copy first 3 numbers into new array
+// Copy last 3 numbers into new array
+// Copy middle 3 numbers into new array
+
+// Print all three new arrays. Original array should remain unchanged — prove it by printing it at the end. 
+
+
+// let numbers = [4,5,6,7,8,9,12];
+// let one = numbers.slice(0, 3);
+// let two = numbers.slice(4, 7);
+// let three = numbers.slice(2, 5);
+// console.log(one);
+// console.log(two);
+// console.log(three);
+// console.log(numbers)
+
+
+
+// Now exercise 4 — harder!
+// Create an array of 6 names. Use splice to:
+
+// Remove 2 names from the middle
+// Then add 2 new names at position 1
+// Print array after each operation
+// What happened to original array?
+
+
