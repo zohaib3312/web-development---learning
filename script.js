@@ -647,3 +647,49 @@
 // What happened to original array?
 
 
+// let names = ["zohaib","wahab","waleed hussain","saad haris","hafiz","suzain"];
+
+// names.splice(2 , 3);
+// console.log(names)
+// names.splice(1,0 ,"shoaib","Ali");
+// console.log(names)
+
+//  exercise 5 — the problem:
+// Create an array of 5 students, each with a name and marks. Print each student's name and whether they passed or failed. Pass is 50 or above.
+
+
+// "You are building a school system. You have 5 students with their names and marks. Your job is to display each student's result showing their name and whether they passed or failed. Pass mark is 50."
+
+//  arry of obj obj obj 
+// 2) loops arry 
+// 3) condition pas fail 
+
+
+let students = [
+{name : "zohaib", marks : 50},
+{name : "wahab" , marks : 60},
+{name :"hussain", marks:70},
+{name :"saad haris", marks:80},
+{name : "saba", marks:40}
+]
+
+//  for (const element of students) {
+//    if (element.marks >= 50) {
+//       console.log(`${element.name} is Pass`);
+//    }else{
+//       console.log(`${element.name} is Fail`);
+//    }
+
+   
+//  }
+
+array.forEach(element => {
+   if (element.marks >= 50) {
+      console.log(`${element.name} is Pass`);
+   }else{
+      console.log(`${element.name} is Fail`);
+   }
+});
+
+
+
