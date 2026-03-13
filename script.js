@@ -665,13 +665,13 @@
 // 3) condition pas fail 
 
 
-let students = [
-{name : "zohaib", marks : 50},
-{name : "wahab" , marks : 60},
-{name :"hussain", marks:70},
-{name :"saad haris", marks:80},
-{name : "saba", marks:40}
-]
+// let students = [
+// {name : "zohaib", marks : 50},
+// {name : "wahab" , marks : 60},
+// {name :"hussain", marks:70},
+// {name :"saad haris", marks:80},
+// {name : "saba", marks:40}
+// ]
 
 //  for (const element of students) {
 //    if (element.marks >= 50) {
@@ -682,14 +682,108 @@ let students = [
 
    
 //  }
+// array.forEach(element => {
+//    if (element.marks >= 50) {
+//       console.log(`${element.name} is Pass`);
+//    }else{
+//       console.log(`${element.name} is Fail`);
+//    }
+// });
 
-array.forEach(element => {
-   if (element.marks >= 50) {
-      console.log(`${element.name} is Pass`);
-   }else{
-      console.log(`${element.name} is Fail`);
-   }
-});
+
+// "You have a list of 5 product prices. Create a new list with 20% discount applied to each price."
+
+// let products = [50,60,200,400,500];
+// let discountPrice = products.map((price)=> price *0.8)
+// console.log(discountPrice);
+
+
+
+// "You have a list of numbers. Show only numbers greater than 10."
+
+// let numbers = [5,6,50,80,10,12];
+// let greaterNumbers = numbers.filter((number)=> number >10);
+// console.log(greaterNumbers);
+
+
+// "You have a list of 5 product prices. Find the total cost of all products."
+// let prices = [100, 250, 75, 400, 150];
+// let totalPrice = prices.reduce((sum , num)=> sum + num, 0);
+// console.log(totalPrice);
+
+
+
+// "You have a list of students with names and marks. Find the first student who scored above 80."
+
+// let students = [
+//   {name: "zohaib", marks: 65},
+//   {name: "ahmed", marks: 85},
+//   {name: "ali", marks: 90},
+//   {name: "sara", marks: 72}
+// ];
+
+
+// let highScoreStudent = students.find((num)=> num.marks > 80)
+// console.log(highScoreStudent); 
+
+
+// "You have a list of 5 names. Sort them alphabetically and print."
+
+// let names = ["zohaib","shoaib","wakar hussain","umair"];
+// names.sort();
+// console.log(names)
+
+
+
+// "You are building a student result system. You have 8 students with marks."
+
+// Do all four of these:
+
+// How many students passed? (marks >= 50)
+// Find first student who scored above 90
+// Create new array with all marks doubled
+// Get total sum of all marks
+
+
+
+// let students = [
+//   {name: "zohaib", marks: 45},
+//   {name: "ahmed", marks: 78},
+//   {name: "ali", marks: 92},
+//   {name: "sara", marks: 33},
+//   {name: "usman", marks: 67},
+//   {name: "haris", marks: 88},
+//   {name: "saba", marks: 23},
+//   {name: "waleed", marks: 95}
+// ];
+
+//   for (let i = 0; i < students.length; i++) {
+//     if (students[i].marks >50) {
+//       console.log(`${students[i].name} is pass `)
+//     }else{
+//       console.log(`${students[i].name} is Fail `)
+//     }
+   
+//   }
+
+
+// students.forEach(element => {
+//    if (element.marks > 50) {
+//       console.log(`${element.name} is pass`)
+//    }else{
+//       console.log(`${element.name} is Fail`)
+//    }
+// });
+
+// let student = students.find((value)=> value.marks > 90);
+// console.log(student.marks)
+
+// let student2 = students.map((value)=> value.marks *2);
+// console.log(student2);
+
+// let totalSum = students.reduce((sum, num)=> sum + num.marks, 0);
+// console.log(totalSum);
+
 
 
 
