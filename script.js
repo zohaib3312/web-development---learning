@@ -785,5 +785,94 @@
 // console.log(totalSum);
 
 
+// todo APP 
 
 
+
+// Build a Todo List with these 4 actions:
+// 1. Add a new todo
+// 2. Show all todos
+// 3. Delete a todo
+// 4. Mark a todo as complete
+
+
+// Add a new todo
+// let toDos = [];
+
+// const addNewTodo = (todo) =>{
+//      toDos.push(todo);
+// }
+
+// addNewTodo("wake up at 10am tomorrow");
+// addNewTodo("Have fun at night");
+// addNewTodo("pickup my father");
+// addNewTodo(`i want to get 10000Rs`);
+// addNewTodo("Have a date at 11:00pm");
+
+// Show Todos
+
+// const showTodos = () =>{
+//      for (const element of toDos) {
+//         console.log(element)
+//      }
+// }
+
+// showTodos();
+
+ 
+// Delete Todos 
+
+// const deleteTodos = (num) =>{
+//      toDos.splice(num , 1); 
+// }
+
+// deleteTodos(1);
+// showTodos();
+
+
+// mark todo has complete 
+
+// const markTodos = (num) =>{
+//      console.log(`${toDos[num]} is Completed`)
+// }
+
+// markTodos(1);
+
+
+
+
+
+let toDos = [];
+
+const addNewTodo = (todo) => {
+  let newTodo = {
+    text: todo,
+    isComplete: false
+  };
+  toDos.push(newTodo);
+}
+
+const showTodos = () => {
+  for (const element of toDos) {
+    console.log(element);
+  }
+}
+
+const deleteTodo = (num) => {
+  toDos.splice(num, 1);
+}
+
+const markComplete = (num) => {
+  toDos[num].isComplete = true;
+  console.log(`${toDos[num].text} is completed!`);
+}
+
+// test it
+addNewTodo("wake up at 10am");
+addNewTodo("buy groceries");
+addNewTodo("call mom");
+showTodos();
+deleteTodo(1);
+showTodos();
+markComplete(0);
+showTodos();
