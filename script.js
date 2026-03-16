@@ -838,41 +838,98 @@
 
 // markTodos(1);
 
+// let toDos = [];
 
+// const addNewTodo = (todo) => {
+//   let newTodo = {
+//     text: todo,
+//     isComplete: false
+//   };
+//   toDos.push(newTodo);
+// }
 
+// const showTodos = () => {
+//   for (const element of toDos) {
+//     console.log(element);
+//   }
+// }
 
+// const deleteTodo = (num) => {
+//   toDos.splice(num, 1);
+// }
 
-let toDos = [];
-
-const addNewTodo = (todo) => {
-  let newTodo = {
-    text: todo,
-    isComplete: false
-  };
-  toDos.push(newTodo);
-}
-
-const showTodos = () => {
-  for (const element of toDos) {
-    console.log(element);
-  }
-}
-
-const deleteTodo = (num) => {
-  toDos.splice(num, 1);
-}
-
-const markComplete = (num) => {
-  toDos[num].isComplete = true;
-  console.log(`${toDos[num].text} is completed!`);
-}
+// const markComplete = (num) => {
+//   toDos[num].isComplete = true;
+//   console.log(`${toDos[num].text} is completed!`);
+// }
 
 // test it
-addNewTodo("wake up at 10am");
-addNewTodo("buy groceries");
-addNewTodo("call mom");
-showTodos();
-deleteTodo(1);
-showTodos();
-markComplete(0);
-showTodos();
+// addNewTodo("wake up at 10am");
+// addNewTodo("buy groceries");
+// addNewTodo("call mom");
+// showTodos();
+// deleteTodo(1);
+// showTodos();
+// markComplete(0);
+// showTodos();
+
+
+// 1. Add a product to cart (name and price)
+// 2. Show all products in cart
+// 3. Remove a product from cart
+// 4. Calculate total price of all products
+// Cart: [{name: "shirt", price: 500}, ...]
+// Total: 1500
+
+
+
+// Add a product to cart
+
+let cart  = [];
+
+const addToCard = (name , price) =>{
+  let cardobj = {
+    name : name,
+    price: price
+  }
+
+  cart.push(cardobj);
+  console.log(cart)
+   
+}
+
+// Show all products in cart
+
+const showProduct = ()=>{
+  cart.forEach(element => {
+    console.log(element)
+  });
+}
+
+ // 3. Remove a product from cart
+
+const removeProduct = (num)=>{
+  cart.splice(num , 1)
+}
+
+
+// / 4. Calculate total price of all products 
+
+const totalPrice = ()=>{
+    let total = cart.reduce((sum, num) => sum + num.price, 0);
+    console.log(`Total ${total}`);
+}
+
+
+ 
+addToCard("bubble", 20);
+addToCard("baloon", 300);
+addToCard("chocolate", 500); 
+addToCard("t shirt", 500);
+addToCard("cap", 200);
+showProduct()
+removeProduct(1)
+showProduct()
+totalPrice()
+
+ 
