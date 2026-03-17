@@ -885,66 +885,145 @@
 
 // Add a product to cart
 
-let cart  = [];
+// let cart  = [];
 
-const addToCard = (name , price) =>{
-  let cardobj = {
-    name : name,
-    price: price
-  }
+// const addToCard = (name , price) =>{
+//   let cardobj = {
+//     name : name,
+//     price: price
+//   }
 
-  cart.push(cardobj);
-  console.log(cart)
+//   cart.push(cardobj);
+//   console.log(cart)
    
-}
+// }
 
 // Show all products in cart
 
-const showProduct = ()=>{
-  cart.forEach(element => {
-    console.log(element)
-  });
-}
+// const showProduct = ()=>{
+//   cart.forEach(element => {
+//     console.log(element)
+//   });
+// }
 
  // 3. Remove a product from cart
 
-const removeProduct = (num)=>{
-  cart.splice(num , 1)
-}
+// const removeProduct = (num)=>{
+//   cart.splice(num , 1)
+// }
 
 
 // / 4. Calculate total price of all products 
 
-const totalPrice = ()=>{
-    let total = cart.reduce((sum, num) => sum + num.price, 0);
-    console.log(`Total ${total}`);
-}
+// const totalPrice = ()=>{
+//     let total = cart.reduce((sum, num) => sum + num.price, 0);
+//     console.log(`Total ${total}`);
+// }
 
 
  
-addToCard("bubble", 20);
-addToCard("baloon", 300);
-addToCard("chocolate", 500); 
-addToCard("t shirt", 500);
-addToCard("cap", 200);
-showProduct()
-removeProduct(1)
-showProduct()
-totalPrice()
+// addToCard("bubble", 20);
+// addToCard("baloon", 300);
+// addToCard("chocolate", 500); 
+// addToCard("t shirt", 500);
+// addToCard("cap", 200);
+// showProduct()
+// removeProduct(1)
+// showProduct()
+// totalPrice()
 
  
-let result = 1
+// let result = 1
 
-for (let i = 1; i <= 5; i++) {
-  result *= i;
+// for (let i = 1; i <= 5; i++) {
+//   result *= i;
   
-}
-console.log(result);
+// }
+// console.log(result);
 
 
 
-let factoral = [1,2,3,4,5];
+// let factoral = [1,2,3,4,5];
 
-let result1 = factoral.reduce((num, sum)=>num * sum , 1);
+// let result1 = factoral.reduce((num, sum)=>num * sum , 1);
 
-console.log(result1);
+// console.log(result1);
+
+// javascipt dom
+
+
+// <!-- Target the heading and button
+// When button clicked — change heading text -->
+
+
+// let heading = document.querySelector("#heading");
+// let btn = document.querySelector("#btn");
+
+// btn.addEventListener("click", () => {
+//   heading.textContent = "Text is change";
+// })
+
+
+
+// Now Try These Small Challenges
+
+// Make button change heading color to red when clicked
+// Make button toggle between "Hello World" and "Text is Changed" every click
+// Add second button that hides the heading when clicked
+
+// These will teach you style, toggle and display naturally! 
+
+
+// Make button change heading color to red when clicked
+
+// let btn = document.querySelector("#btn");
+// let heading = document.querySelector("#heading");
+
+// btn.addEventListener("click",()=> {
+// heading.style.color="red";
+// });
+
+
+
+
+// Make button toggle between "Hello World" and "Text is Changed" every click 
+
+// let btn = document.querySelector("#btn");
+// let heading = document.querySelector("#heading");
+
+// btn.addEventListener("click",()=> {
+//  if (heading.textContent === "Hello World!") {
+//   heading.textContent = "Text is Changed"
+//  }else{
+//   heading.textContent= "Hello World!"
+//  }
+// });
+
+// Add second button that hides the heading when clicked
+
+
+// 2 button method
+
+// let btn = document.querySelector("#btn");
+// let btn2 = document.querySelector("#btn2");
+// let heading = document.querySelector("#heading");
+
+// btn.addEventListener("click",()=> {
+// heading.style.display="none";
+// });
+// btn2.addEventListener("click",()=> {
+// heading.style.display="block";
+// });
+
+// one button method
+
+let btn = document.querySelector("#btn");
+let heading = document.querySelector("#heading");
+
+btn.addEventListener("click",()=> {
+ if (heading.style.display === "none") {
+  heading.style.display = "block";
+ }else{
+  heading.style.display= "none";
+ }
+});
