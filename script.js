@@ -1017,13 +1017,47 @@
 
 // one button method
 
-let btn = document.querySelector("#btn");
-let heading = document.querySelector("#heading");
+// let btn = document.querySelector("#btn");
+// let heading = document.querySelector("#heading");
 
-btn.addEventListener("click",()=> {
- if (heading.style.display === "none") {
-  heading.style.display = "block";
- }else{
-  heading.style.display= "none";
- }
+// btn.addEventListener("click",()=> {
+//  if (heading.style.display === "none") {
+//   heading.style.display = "block";
+//  }else{
+//   heading.style.display= "none";
+//  }
+// });
+
+// Combine everything into one small project:
+
+// **Build a simple counter app:**
+// ```
+// Show a number starting at 0
+// Button 1 → increases number by 1
+// Button 2 → decreases number by 1
+// Button 3 → resets to 0
+
+
+
+let count = document.querySelector("#count");
+let increase = document.querySelector("#increase");
+let decreases = document.querySelector("#decrease");
+let reset = document.querySelector("#reset");
+let countNumber = 0;
+
+// increase funciton 
+increase.addEventListener("click", ()=>{
+countNumber++
+count.textContent = countNumber;
+});
+
+// decrease funciton
+decreases.addEventListener("click", ()=>{
+countNumber--
+count.textContent = countNumber;
+});
+// reset funciton
+reset.addEventListener("click", ()=>{
+countNumber= 0;
+count.textContent = countNumber;
 });
