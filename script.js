@@ -189,7 +189,7 @@
 
 //  console.log(a === b); // false check value with type 
 //  console.log(a == b); // true check only value
- 
+
 
 // exercise 4 — create a variable temperature, if above 30 print "hot", between 20 and 30 print "normal", below 20 print "cold" 
 
@@ -239,7 +239,7 @@
 // }else{
 //     console.log("Fail")
 // }
-    
+
 // console.log(student.isPassed ? "Passed":"Failed");
 
 // if (student.age >= 18 && student.isPassed) {
@@ -264,7 +264,7 @@
 
 // for (let i = 10; i >= 1; i--) {
 //  console.log(i);
-   
+
 // }
 
 
@@ -321,10 +321,10 @@
 
 
 // for (let key in students) {
-    
+
 //    console.log(key, students[key])
-    
-     
+
+
 // }
 
 
@@ -442,15 +442,15 @@
 //         return a + b;
 //      }else if( operators === "-"){
 //         return a - b;
-    
+
 //      }else if( operators === "*"){
 //         return a * b;
-    
+
 //      }else if( operators === "/"){
 //         if (b === 0) {
 //             return "Cannot divide by zero";
 //         }
-    
+
 //         return a / b;
 //      }
 // }
@@ -468,7 +468,7 @@
 
 // Create a string with your full name. Print it in uppercase and lowercase.
 // let userName = "zohaib akhtar";
- 
+
 // console.log(userName.toUpperCase());
 // console.log(userName.toLowerCase());
 
@@ -522,9 +522,9 @@
 // let cities = "karachi,lahore,islamabad,peshawar,quetta";
 // let city = cities.split(",");
 // for (let i = 0; i <  5; i++) {
-    
+
 //    console.log(city[i].toUpperCase())
-   
+
 // }
 
 
@@ -537,7 +537,7 @@
 // Returns "Valid email" or "Invalid email"
 
 // function validateEmail(email) {
-   
+
 //    if (email.includes("@") && email.endsWith(".com")) {
 //       return "valid email"
 //    }else{
@@ -680,7 +680,7 @@
 //       console.log(`${element.name} is Fail`);
 //    }
 
-   
+
 //  }
 // array.forEach(element => {
 //    if (element.marks >= 50) {
@@ -763,7 +763,7 @@
 //     }else{
 //       console.log(`${students[i].name} is Fail `)
 //     }
-   
+
 //   }
 
 
@@ -819,7 +819,7 @@
 
 // showTodos();
 
- 
+
 // Delete Todos 
 
 // const deleteTodos = (num) =>{
@@ -895,7 +895,7 @@
 
 //   cart.push(cardobj);
 //   console.log(cart)
-   
+
 // }
 
 // Show all products in cart
@@ -906,7 +906,7 @@
 //   });
 // }
 
- // 3. Remove a product from cart
+// 3. Remove a product from cart
 
 // const removeProduct = (num)=>{
 //   cart.splice(num , 1)
@@ -921,7 +921,7 @@
 // }
 
 
- 
+
 // addToCard("bubble", 20);
 // addToCard("baloon", 300);
 // addToCard("chocolate", 500); 
@@ -932,12 +932,12 @@
 // showProduct()
 // totalPrice()
 
- 
+
 // let result = 1
 
 // for (let i = 1; i <= 5; i++) {
 //   result *= i;
-  
+
 // }
 // console.log(result);
 
@@ -1046,18 +1046,38 @@ let reset = document.querySelector("#reset");
 let countNumber = 0;
 
 // increase funciton 
-increase.addEventListener("click", ()=>{
-countNumber++
-count.textContent = countNumber;
+increase.addEventListener("click", () => {
+    countNumber++
+    count.textContent = countNumber;
 });
 
 // decrease funciton
-decreases.addEventListener("click", ()=>{
-countNumber--
-count.textContent = countNumber;
+decreases.addEventListener("click", () => {
+    countNumber--
+    count.textContent = countNumber;
 });
 // reset funciton
-reset.addEventListener("click", ()=>{
-countNumber= 0;
-count.textContent = countNumber;
+reset.addEventListener("click", () => {
+    countNumber = 0;
+    count.textContent = countNumber;
 });
+
+
+// build the background color changer: When button is clicked — page background changes to a random color every time. Think about:
+
+
+
+let pageColor = document.querySelector("#pagecolor");
+let bodyelement = document.querySelector("body")
+
+const randomColor = () => {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
+
+}
+pageColor.addEventListener("click", () => {
+    let output = randomColor();
+    bodyelement.style.backgroundColor = output;
+})
