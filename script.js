@@ -1037,47 +1037,87 @@
 // Button 2 → decreases number by 1
 // Button 3 → resets to 0
 
-
-
-let count = document.querySelector("#count");
-let increase = document.querySelector("#increase");
-let decreases = document.querySelector("#decrease");
-let reset = document.querySelector("#reset");
-let countNumber = 0;
+// let count = document.querySelector("#count");
+// let increase = document.querySelector("#increase");
+// let decreases = document.querySelector("#decrease");
+// let reset = document.querySelector("#reset");
+// let countNumber = 0;
 
 // increase funciton 
-increase.addEventListener("click", () => {
-    countNumber++
-    count.textContent = countNumber;
-});
+// increase.addEventListener("click", () => {
+//     countNumber++
+//     count.textContent = countNumber;
+// });
 
 // decrease funciton
-decreases.addEventListener("click", () => {
-    countNumber--
-    count.textContent = countNumber;
-});
+// decreases.addEventListener("click", () => {
+//     countNumber--
+//     count.textContent = countNumber;
+// });
 // reset funciton
-reset.addEventListener("click", () => {
-    countNumber = 0;
-    count.textContent = countNumber;
-});
+// reset.addEventListener("click", () => {
+//     countNumber = 0;
+//     count.textContent = countNumber;
+// });
 
 
 // build the background color changer: When button is clicked — page background changes to a random color every time. Think about:
 
 
 
-let pageColor = document.querySelector("#pagecolor");
-let bodyelement = document.querySelector("body")
+// let pageColor = document.querySelector("#pagecolor");
+// let bodyelement = document.querySelector("body")
 
-const randomColor = () => {
-    let r = Math.floor(Math.random() * 256);
-    let g = Math.floor(Math.random() * 256);
-    let b = Math.floor(Math.random() * 256);
-    return `rgb(${r}, ${g}, ${b})`;
+// const randomColor = () => {
+//     let r = Math.floor(Math.random() * 256);
+//     let g = Math.floor(Math.random() * 256);
+//     let b = Math.floor(Math.random() * 256);
+//     return `rgb(${r}, ${g}, ${b})`;
 
-}
-pageColor.addEventListener("click", () => {
-    let output = randomColor();
-    bodyelement.style.backgroundColor = output;
+// }
+// pageColor.addEventListener("click", () => {
+//     let output = randomColor();
+//     bodyelement.style.backgroundColor = output;
+// })
+
+// targeting html element 
+// takeing value of input and print in console
+// show that value on ui 
+// add css delete btn with dodo 
+// dlelete all btn will delete all 
+
+
+
+// targeting input elememet and show on screen  
+let todo = document.querySelector("#todo");
+let add = document.querySelector("#btn-add");
+let dele_btn = document.querySelector("#deleteall");
+let showTodolist = document.querySelector("#todos");
+let todolist = [];
+
+add.addEventListener("click", () => {
+    if (todo.value === "") {
+        alert("Please Don't add empty todos")
+        return;
+    }
+    todolist.push(todo.value);
+    showTodolist.innerHTML = todolist.map((item, index) => `<p>${item} <button  class="dynamic-btn" onclick="deleteTodo(${index})">Delete</button></p>`).join("")
+
+    todo.value = "";
+
+});
+
+// delete all todos
+
+dele_btn.addEventListener("click", () => {
+    todolist = [];
+    showTodolist.innerHTML = "";
 })
+
+
+// delete one by one todos
+
+const deleteTodo = (index) => {
+    todolist.splice(index, 1);
+    showTodolist.innerHTML = todolist.map((item, index) => `<p>${item} <button class="dynamic-btn"  onclick="deleteTodo(${index})">Delete</button></p>`).join("")
+}
