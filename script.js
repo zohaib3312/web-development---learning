@@ -1089,35 +1089,70 @@
 
 
 // targeting input elememet and show on screen  
-let todo = document.querySelector("#todo");
-let add = document.querySelector("#btn-add");
-let dele_btn = document.querySelector("#deleteall");
-let showTodolist = document.querySelector("#todos");
-let todolist = [];
+// let todo = document.querySelector("#todo");
+// let add = document.querySelector("#btn-add");
+// let dele_btn = document.querySelector("#deleteall");
+// let showTodolist = document.querySelector("#todos");
+// let todolist = [];
 
-add.addEventListener("click", () => {
-    if (todo.value === "") {
-        alert("Please Don't add empty todos")
-        return;
-    }
-    todolist.push(todo.value);
-    showTodolist.innerHTML = todolist.map((item, index) => `<p>${item} <button  class="dynamic-btn" onclick="deleteTodo(${index})">Delete</button></p>`).join("")
+// add.addEventListener("click", () => {
+//     if (todo.value === "") {
+//         alert("Please Don't add empty todos")
+//         return;
+//     }
+//     todolist.push(todo.value);
+//     showTodolist.innerHTML = todolist.map((item, index) => `<p>${item} <button  class="dynamic-btn" onclick="deleteTodo(${index})">Delete</button></p>`).join("")
 
-    todo.value = "";
+//     todo.value = "";
 
-});
+// });
 
 // delete all todos
 
-dele_btn.addEventListener("click", () => {
-    todolist = [];
-    showTodolist.innerHTML = "";
-})
+// dele_btn.addEventListener("click", () => {
+//     todolist = [];
+//     showTodolist.innerHTML = "";
+// })
 
 
 // delete one by one todos
 
-const deleteTodo = (index) => {
-    todolist.splice(index, 1);
-    showTodolist.innerHTML = todolist.map((item, index) => `<p>${item} <button class="dynamic-btn"  onclick="deleteTodo(${index})">Delete</button></p>`).join("")
-}
+// const deleteTodo = (index) => {
+//     todolist.splice(index, 1);
+//     showTodolist.innerHTML = todolist.map((item, index) => `<p>${item} <button class="dynamic-btn"  onclick="deleteTodo(${index})">Delete</button></p>`).join("")
+// }
+
+
+
+// Exercise 1 — Target container and print all its children.
+
+// let parent = document.querySelector("#container").children;
+// console.log(parent);
+
+
+//  Exercise 2 — Target container and print first and last child.
+
+// let parent = document.querySelector("#container").firstElementChild
+// let parent2 = document.querySelector("#container").lastElementChild
+// console.log(parent);
+// console.log(parent2);
+
+
+
+// Exercise 3 — target heading and print its next sibling!
+
+// let heading = document.querySelector("#heading").nextElementSibling
+// console.log(heading);
+
+
+// Exercise 4 — target span and print its parent element! 
+
+// let span_Parent = document.querySelector("span").parentElement
+// console.log(span_Parent);
+
+
+// Exercise 5 — target para and change its next sibling text to "I am span — changed!"
+
+let para = document.querySelector("#para").nextElementSibling;
+para.textContent="I am span"; 
+console.log(para)
