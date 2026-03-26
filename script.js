@@ -1153,6 +1153,43 @@
 
 // Exercise 5 — target para and change its next sibling text to "I am span — changed!"
 
-let para = document.querySelector("#para").nextElementSibling;
-para.textContent="I am span"; 
-console.log(para)
+// let para = document.querySelector("#para").nextElementSibling;
+// para.textContent="I am span"; 
+// console.log(para)
+
+
+
+
+let boxes = document.querySelectorAll(".box");
+
+// button logic 
+
+const randomColorGenerator = () =>{
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
+
+}
+const applyColor =()=>{
+boxes.forEach((value)=>{
+value.style.backgroundColor=randomColorGenerator();
+})    
+}
+
+
+applyColor();
+
+// page load logic
+
+// const randomColorGenerator = () =>{
+//     let r = Math.floor(Math.random() * 256);
+//     let g = Math.floor(Math.random() * 256);
+//     let b = Math.floor(Math.random() * 256);
+//     return `rgb(${r}, ${g}, ${b})`;
+
+// }
+
+// let allValues = boxes.forEach((value)=>{
+// value.style.backgroundColor=randomColorGenerator();
+// })

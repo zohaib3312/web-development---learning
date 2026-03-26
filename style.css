@@ -465,7 +465,7 @@ body {
 
 
 
-.container {
+/* .container {
   width: 50vw;
   height: 20em;
   transform: translate(-50%, -50%);
@@ -503,3 +503,24 @@ body {
   border: none;
   outline: none;
 }
+
+ */
+
+
+
+ .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  
+ }
+
+ .container .box{
+  border: 1px solid black;
+  padding: 20px;
+  margin: 0 25px;
+  color: white;
+  
+
+ }
