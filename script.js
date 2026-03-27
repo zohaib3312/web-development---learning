@@ -1193,3 +1193,37 @@ applyColor();
 // let allValues = boxes.forEach((value)=>{
 // value.style.backgroundColor=randomColorGenerator();
 // })
+
+
+
+// Exercise 1 — Create a new h2 element with text "Hello DOM" and append it to body.
+
+// let heading2 = document.createElement("h2");
+// heading2.innerText="Hello Dom";
+// document.body.append(heading2);
+//  console.log(heading2)
+
+
+
+// Now try Exercise 2 — create a new p element and prepend it to a container div!
+
+// let para = document.createElement("p");
+// let container = document.querySelector(".container");
+//  container.prepend(para);
+// console.log(container);
+
+
+// Exercise 3 — create a button that adds a new list item to a ul every time clicked!
+
+let menu = document.querySelector("#menu");
+let btn = document.createElement("button");
+btn.innerText = "Click me";
+document.body.append(btn);
+btn.addEventListener("click", ()=>{
+let items = document.createElement("li");
+items.innerText = "Hello World"
+menu.appendChild(items);
+})
+
+console.log(btn)
+
