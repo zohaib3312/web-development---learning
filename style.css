@@ -508,7 +508,7 @@ body {
 
 
 
- .container{
+ /* .container{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -523,4 +523,53 @@ body {
   color: white;
   
 
+ } */
+
+ /* .box{
+  background-color: red;
+  color: white;
  }
+
+
+ .active {
+  background-color: green;
+  color: white;
+} */
+
+body{
+  background-color: black;
+   color: white;
+}
+
+.dark{
+  background-color: white;
+  color: black;
+}
+
+.btn{
+  color: black;
+  text-align: center;
+}
+
+.changing{
+  text-align: center;
+  font-size: 50px;
+  
+  text-align: center;
+  
+}
+
+.color-change{
+  background-color: white;
+  font-size: 50px;
+  color: white;
+  
+}
+
+.active{
+  color: white;
+  text-align: center;
+}
+
+
+

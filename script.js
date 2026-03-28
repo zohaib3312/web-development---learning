@@ -1160,25 +1160,25 @@
 
 
 
-let boxes = document.querySelectorAll(".box");
+// let boxes = document.querySelectorAll(".box");
 
 // button logic 
 
-const randomColorGenerator = () =>{
-    let r = Math.floor(Math.random() * 256);
-    let g = Math.floor(Math.random() * 256);
-    let b = Math.floor(Math.random() * 256);
-    return `rgb(${r}, ${g}, ${b})`;
+// const randomColorGenerator = () =>{
+//     let r = Math.floor(Math.random() * 256);
+//     let g = Math.floor(Math.random() * 256);
+//     let b = Math.floor(Math.random() * 256);
+//     return `rgb(${r}, ${g}, ${b})`;
 
-}
-const applyColor =()=>{
-boxes.forEach((value)=>{
-value.style.backgroundColor=randomColorGenerator();
-})    
-}
+// }
+// const applyColor =()=>{
+// boxes.forEach((value)=>{
+// value.style.backgroundColor=randomColorGenerator();
+// })    
+// }
 
 
-applyColor();
+// applyColor();
 
 // page load logic
 
@@ -1215,15 +1215,69 @@ applyColor();
 
 // Exercise 3 — create a button that adds a new list item to a ul every time clicked!
 
-let menu = document.querySelector("#menu");
-let btn = document.createElement("button");
-btn.innerText = "Click me";
-document.body.append(btn);
+// let menu = document.querySelector("#menu");
+// let btn = document.createElement("button");
+// btn.innerText = "Click me";
+// document.body.append(btn);
+// btn.addEventListener("click", ()=>{
+// let items = document.createElement("li");
+// items.innerText = "Hello World"
+// menu.appendChild(items);
+// })
+
+// console.log(btn)
+
+
+// Exercise 4 — create a button that removes the last item from the ul list every time clicked.
+// You already have the ul targeted. Think about:
+
+// How to get the last child of ul
+// How to remove it
+
+
+// let menu2 = document.querySelector("#menu");
+// let btn2 = document.createElement("button");
+// btn2.innerText = "remove me";
+// document.body.append(btn2);
+// btn2.addEventListener("click", ()=>{
+//  menu2.lastElementChild.remove();
+// })
+
+
+//  Exercise 5 — toggle a class "active" on a div when clicked! 
+
+
+ 
+// let container = document.querySelector(".box");
+// container.addEventListener("click", ()=>{
+// container.classList.toggle("active");
+// })
+
+
+// One button           →  toggles dark/light mode
+// Entire page changes  →  background, text color
+// Button text changes  →  "Dark Mode" / "Light Mode"
+
+let btn = document.querySelector(".btn");
+let heading = document.querySelector(".changing")
 btn.addEventListener("click", ()=>{
-let items = document.createElement("li");
-items.innerText = "Hello World"
-menu.appendChild(items);
+btn.classList.toggle("active");
+document.body.classList.toggle("dark")
+if (heading.textContent === "Dark Mode Toggle") {
+  heading.textContent = "Light Mode Toggle";
+} else {
+  heading.textContent = "Dark Mode Toggle";
+}
+if (btn.textContent === "Light Mode ") {
+  btn.textContent = "Dark Mode ";
+} else {
+  btn.textContent = "Light Mode ";
+}
+
 })
 
-console.log(btn)
+
+
+
+
 
