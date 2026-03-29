@@ -1247,7 +1247,7 @@
 //  Exercise 5 — toggle a class "active" on a div when clicked! 
 
 
- 
+
 // let container = document.querySelector(".box");
 // container.addEventListener("click", ()=>{
 // container.classList.toggle("active");
@@ -1258,26 +1258,62 @@
 // Entire page changes  →  background, text color
 // Button text changes  →  "Dark Mode" / "Light Mode"
 
-let btn = document.querySelector(".btn");
-let heading = document.querySelector(".changing")
-btn.addEventListener("click", ()=>{
-btn.classList.toggle("active");
-document.body.classList.toggle("dark")
-if (heading.textContent === "Dark Mode Toggle") {
-  heading.textContent = "Light Mode Toggle";
-} else {
-  heading.textContent = "Dark Mode Toggle";
+// let btn = document.querySelector(".btn");
+// let heading = document.querySelector(".changing")
+// btn.addEventListener("click", ()=>{
+// btn.classList.toggle("active");
+// document.body.classList.toggle("dark")
+// if (heading.textContent === "Dark Mode Toggle") {
+//   heading.textContent = "Light Mode Toggle";
+// } else {
+//   heading.textContent = "Dark Mode Toggle";
+// }
+// if (btn.textContent === "Light Mode ") {
+//   btn.textContent = "Dark Mode ";
+// } else {
+//   btn.textContent = "Light Mode ";
+// }
+
+// })
+
+
+// array of obj
+
+let cards = [];
+let container = document.querySelector(".container")
+const addCard = (imageurl, title, channelname, views, timeposted,timeduration) => {
+  let carddata = {
+    imageurl: imageurl,
+    title: title,
+    channelname: channelname,
+    views: views,
+    timeposted: timeposted,
+    timeduration: timeduration
+  };
+  cards.push(carddata);
 }
-if (btn.textContent === "Light Mode ") {
-  btn.textContent = "Dark Mode ";
-} else {
-  btn.textContent = "Light Mode ";
-}
 
-})
+addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "58:32")
+addCard("https://i.ytimg.com/vi/Lq7XRGyiYlo/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLAezqS4pRjMn7A5p1TF_4UIMIp-SA", "Arcade x Mann Mera (Mashup) Full Version | Gravero", "Gravero", 
+53724570, 5, "0:57")
+addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "66:32")
+addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "40:32")
+addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "40:32")
+addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "40:32")
+addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "40:32")
+addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "40:32")
 
+container.innerHTML = cards.map((item) =>
+  `<div class="card">
+  <div class="thubnail">
+  <img src="${item.imageurl}">
+  <span class="timeduration">${item.timeduration}</span>
+  </div>
 
-
-
-
-
+  <div class="card-dec"> 
+  <p>${item.title}</p>
+  <p>${item.channelname}. ${item.views} views .${item.timeposted} months ago </p>
+   
+  </div>
+</div>`
+).join("")

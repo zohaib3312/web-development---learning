@@ -536,7 +536,7 @@ body {
   color: white;
 } */
 
-body{
+/* body{
   background-color: black;
    color: white;
 }
@@ -569,7 +569,44 @@ body{
 .active{
   color: white;
   text-align: center;
+} */
+
+*{
+  box-sizing: border-box;
 }
 
+ .container{
+  width: 100vw;
+  height: 30vh;
+  
+  
+  
+ }
 
+ .card{
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 20px;
+  gap: 25px;
+ }
 
+ 
+.thubnail{
+  width: 21rem;
+  position: relative;
+  
+}
+ .card img{
+  width: 100%;
+ }
+
+  
+
+.timeduration {
+  position: absolute;
+  top: 83%;
+  left: 85%;
+  background-color: black;
+  color: white;
+  padding: 2px 5px;
+}
