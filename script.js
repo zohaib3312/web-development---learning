@@ -1279,41 +1279,94 @@
 
 // array of obj
 
-let cards = [];
-let container = document.querySelector(".container")
-const addCard = (imageurl, title, channelname, views, timeposted,timeduration) => {
-  let carddata = {
-    imageurl: imageurl,
-    title: title,
-    channelname: channelname,
-    views: views,
-    timeposted: timeposted,
-    timeduration: timeduration
-  };
-  cards.push(carddata);
-}
+// let cards = [];
+// let container = document.querySelector(".container")
+// const addCard = (imageurl, title, channelname, views, timeposted,timeduration) => {
+//   let carddata = {
+//     imageurl: imageurl,
+//     title: title,
+//     channelname: channelname,
+//     views: views,
+//     timeposted: timeposted,
+//     timeduration: timeduration
+//   };
+//   cards.push(carddata);
+// }
 
-addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "58:32")
-addCard("https://i.ytimg.com/vi/Lq7XRGyiYlo/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLAezqS4pRjMn7A5p1TF_4UIMIp-SA", "Arcade x Mann Mera (Mashup) Full Version | Gravero", "Gravero", 
-53724570, 5, "0:57")
-addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "66:32")
-addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "40:32")
-addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "40:32")
-addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "40:32")
-addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "40:32")
-addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "40:32")
+// addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "58:32")
+// addCard("https://i.ytimg.com/vi/Lq7XRGyiYlo/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLAezqS4pRjMn7A5p1TF_4UIMIp-SA", "Arcade x Mann Mera (Mashup) Full Version | Gravero", "Gravero", 
+// 53724570, 5, "0:57")
+// addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "66:32")
+// addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "40:32")
+// addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "40:32")
+// addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "40:32")
+// addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "40:32")
+// addCard("https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ", "JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73", "code with harry", 189, 5, "40:32")
 
-container.innerHTML = cards.map((item) =>
-  `<div class="card">
-  <div class="thubnail">
-  <img src="${item.imageurl}">
-  <span class="timeduration">${item.timeduration}</span>
-  </div>
+// container.innerHTML = cards.map((item) =>
+//   `<div class="card">
+//   <div class="thubnail">
+//   <img src="${item.imageurl}">
+//   <span class="timeduration">${item.timeduration}</span>
+//   </div>
 
-  <div class="card-dec"> 
-  <p>${item.title}</p>
-  <p>${item.channelname}. ${item.views} views .${item.timeposted} months ago </p>
+//   <div class="card-dec"> 
+//   <p>${item.title}</p>
+//   <p>${item.channelname}. ${item.views} views .${item.timeposted} months ago </p>
    
-  </div>
-</div>`
-).join("")
+//   </div>
+// </div>`
+// ).join("")
+
+
+// Exercise 1 — Create a button that shows an alert after 3 seconds when clicked using setTimeout.
+
+// let button = document.querySelector("#btn");
+// button.addEventListener("click", ()=>{
+
+//   setTimeout(() => {
+//   alert("i was clicked after 3sec")
+// },3000);
+// })
+
+
+// Exercise 2 — Create a counter that increases by 1 every second using setInterval. Add a stop button that uses clearInterval.
+
+// let stopBtn = document.querySelector("#btn-stop");
+// let container = document.querySelector(".counter")
+// let counter = 0;
+//  let timer = setInterval(() => {
+//     counter += 1
+//     container.textContent= counter;
+       
+// },1000);
+
+//  stopBtn.addEventListener("click", ()=>{
+//   clearInterval(timer);
+//   container.textContent=0;
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
