@@ -571,7 +571,7 @@ body {
   text-align: center;
 } */
 
-*{
+/* *{
   box-sizing: border-box;
 }
 
@@ -609,4 +609,61 @@ body {
   background-color: black;
   color: white;
   padding: 2px 5px;
+} */
+
+
+/* 
+.outer{
+  width: 50vw;
+  height: 50vh;
+  background-color: red;
+  position: relative;
+  
+}
+.inner{
+  width: 30vw;
+  height: 30vh;
+  background-color: yellow;
+position: absolute;
+transform: translate(100px ,50px);
+
+}
+ */
+
+
+
+ /* Center the clock on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+/* Clock container with glow and shadow */
+.clock-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 80px;
+    border-radius: 30px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* Clock numbers */
+.clock {
+    font-size: 4rem;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(255,255,255,0.7);
+    transition: all 0.3s ease;
+}
+
+/* Optional: hover effect for fun */
+.clock-container:hover .clock {
+    text-shadow: 0 0 40px rgba(255,255,255,1);
+    transform: scale(1.05);
 }

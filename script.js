@@ -1313,7 +1313,7 @@
 //   <div class="card-dec"> 
 //   <p>${item.title}</p>
 //   <p>${item.channelname}. ${item.views} views .${item.timeposted} months ago </p>
-   
+
 //   </div>
 // </div>`
 // ).join("")
@@ -1338,7 +1338,7 @@
 //  let timer = setInterval(() => {
 //     counter += 1
 //     container.textContent= counter;
-       
+
 // },1000);
 
 //  stopBtn.addEventListener("click", ()=>{
@@ -1347,12 +1347,55 @@
 // })
 
 
+// Exercise 3 — Create two nested divs. Add click event to both. Click inner div and see bubbling. Then stop bubbling using stopPropagation.
+
+// let outerDiv = document.querySelector(".outer");
+// let innerDiv = document.querySelector(".inner");
+
+// outerDiv.addEventListener("click" ,(e)=>{
+//     alert("Outer Div Was Clicked");
+
+
+// })
+// innerDiv.addEventListener("click" ,(e)=>{
+//     alert("inner Div Was Clicked");
+//     e.stopPropagation();
+// })
 
 
 
+// build a digital clock that updates every second using setInterval.
+
+setInterval(() => {
+    let date = new Date();
+    let hours = date.getHours()
+    let minuts = date.getMinutes()
+    let seconds = date.getSeconds()
+    let period = "";
+    if (hours >= 12) {
+        period = "PM";
+    } else {
+        period = "AM";
+    }
+
+    if (hours > 12) {
+        hours -= 12
+    }
+
+
+    if (hours === 0)
+        hours = 12;
+
+
+    hours = hours < 10 ? "0" + hours : hours
+    minuts = minuts < 10 ? "0" + minuts : minuts
+    seconds = seconds < 10 ? "0" + seconds : seconds
+
+    document.querySelector(".clock").textContent = `${hours}:${minuts}:${seconds}: ${period}`;
 
 
 
+}, 1000);
 
 
 
