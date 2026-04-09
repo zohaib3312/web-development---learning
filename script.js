@@ -1366,50 +1366,139 @@
 
 // build a digital clock that updates every second using setInterval.
 
-setInterval(() => {
-    let date = new Date();
-    let hours = date.getHours()
-    let minuts = date.getMinutes()
-    let seconds = date.getSeconds()
-    let period = "";
-    if (hours >= 12) {
-        period = "PM";
-    } else {
-        period = "AM";
-    }
+// setInterval(() => {
+//     let date = new Date();
+//     let hours = date.getHours()
+//     let minuts = date.getMinutes()
+//     let seconds = date.getSeconds()
+//     let period = "";
+//     if (hours >= 12) {
+//         period = "PM";
+//     } else {
+//         period = "AM";
+//     }
 
-    if (hours > 12) {
-        hours -= 12
-    }
-
-
-    if (hours === 0)
-        hours = 12;
+//     if (hours > 12) {
+//         hours -= 12
+//     }
 
 
-    hours = hours < 10 ? "0" + hours : hours
-    minuts = minuts < 10 ? "0" + minuts : minuts
-    seconds = seconds < 10 ? "0" + seconds : seconds
-
-    document.querySelector(".clock").textContent = `${hours}:${minuts}:${seconds}: ${period}`;
+//     if (hours === 0)
+//         hours = 12;
 
 
+//     hours = hours < 10 ? "0" + hours : hours
+//     minuts = minuts < 10 ? "0" + minuts : minuts
+//     seconds = seconds < 10 ? "0" + seconds : seconds
 
-}, 1000);
+//     document.querySelector(".clock").textContent = `${hours}:${minuts}:${seconds}: ${period}`;
+// }, 1000);
+
+// function orderPizza(callback) {
+//   console.log("Making pizza...");
+
+//   setTimeout(() => {
+//     console.log("Pizza is ready!");
+//     callback(); // call you back now
+//   }, 3000);
+// }
+
+// function eatPizza() {
+//   console.log("Eating pizza!");
+// }
+
+// orderPizza(eatPizza);
+
+// Question 1:
+
+// What will be the output?
+
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Timeout");
+}, 0);
+
+console.log("End");
+
+//output 
+
+//start 
+//end 
+//Timeout
+
+
+// console.log("A");
+
+// Promise.resolve().then(() => {
+//   console.log("B");
+// });
+
+// console.log("C");
+
+
+// console.log("Start");
+
+// setTimeout(() => {
+//   console.log("Timeout");
+// }, 0);
+
+// Promise.resolve().then(() => {
+//   console.log("Promise");
+// });
+
+// console.log("End");
+
+// output 
+
+// start 
+// end  
+// timeout 
+// promise 
 
 
 
+// console.log("1");
+
+// setTimeout(() => {
+//   console.log("2");
+// }, 0);
+
+// Promise.resolve().then(() => {
+//   console.log("3");
+// }).then(() => {
+//   console.log("4");
+// });
+
+// console.log("5");
+
+//output
+// 1
+// 5
+// 3
+// 4
+// 2 
+
+// Task:
+
+// Create a function that simulates an API call using Promise
+
+//  Requirements:
+
+// Function name: getData
+// After 2 seconds → return "Data received"
+// Use setTimeout
+// Use Promise
+// Then print result using .then()
 
 
+let p = new Promise((resolve, reject) => {
+setTimeout(()=>{
+ resolve("Hello after 1 second");
+},1000);
 
+ });
 
-
-
-
-
-
-
-
-
-
-
+p.then((data)=>{
+console.log(data)
+});
