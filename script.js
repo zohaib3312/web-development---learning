@@ -1413,13 +1413,13 @@
 
 // What will be the output?
 
-console.log("Start");
+// console.log("Start");
 
-setTimeout(() => {
-  console.log("Timeout");
-}, 0);
+// setTimeout(() => {
+//   console.log("Timeout");
+// }, 0);
 
-console.log("End");
+// console.log("End");
 
 //output 
 
@@ -1492,13 +1492,56 @@ console.log("End");
 // Then print result using .then()
 
 
-let p = new Promise((resolve, reject) => {
-setTimeout(()=>{
- resolve("Hello after 1 second");
-},1000);
+// let p = new Promise((resolve, reject) => {
+// setTimeout(()=>{
+//  resolve("Hello after 1 second");
+// },1000);
 
- });
+//  });
 
-p.then((data)=>{
-console.log(data)
-});
+// p.then((data)=>{
+// console.log(data)
+// });
+
+// Task 1 (VERY EASY)
+
+// 👉 Create a function:
+
+// Name: getPosts
+// Fetch from:
+// https://jsonplaceholder.typicode.com/posts
+// Print data
+
+
+
+// const getPost = async () => {
+//   let res = await fetch("https://jsonplaceholder.typicode.com/posts");
+//   let data = await res.json();
+//   data.forEach(element => {
+//     console.log(element.title)
+//   });
+// };
+// getPost();
+
+
+const getUsers = async () => {
+  let res = await fetch("https://jsonplaceholder.typicode.com/users");
+  let data = await res.json();
+  let users = document.querySelector("#users");
+  data.forEach(user => {
+    let li = document.createElement("li");
+    li.textContent = `${user.name} - ${user.email}` 
+  users.appendChild(li);
+  });
+};
+getUsers();
+
+
+
+
+
+
+
+
+
+
