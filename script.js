@@ -1524,17 +1524,38 @@
 // getPost();
 
 
-const getUsers = async () => {
-  let res = await fetch("https://jsonplaceholder.typicode.com/users");
-  let data = await res.json();
-  let users = document.querySelector("#users");
-  data.forEach(user => {
-    let li = document.createElement("li");
-    li.textContent = `${user.name} - ${user.email}` 
-  users.appendChild(li);
-  });
-};
-getUsers();
+// const getUsers = async () => {
+//   let res = await fetch("https://jsonplaceholder.typicode.com/users");
+//   let data = await res.json();
+//   let users = document.querySelector("#users");
+//   data.forEach(user => {
+//     let li = document.createElement("li");
+//     li.textContent = `${user.name} - ${user.email}` 
+//   users.appendChild(li);
+//   });
+// };
+// getUsers();
+
+
+
+// 1. Create green terminal UI
+
+// 2. Store messages in an array
+
+// 3. Create a function that returns a Promise (delay 1–7 seconds)
+
+// 4. Create an async function to run the program
+
+// 5. For each message in array:
+
+//     a. show message on UI
+//     b. start blinking dots animation
+//     c. await random delay function
+//     d. move to next message
+
+// 6. End when all messages are shown
+
+
 
 
 
