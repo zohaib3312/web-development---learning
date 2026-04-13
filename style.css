@@ -508,7 +508,7 @@ body {
 
 
 
- /* .container{
+/* .container{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -525,7 +525,7 @@ body {
 
  } */
 
- /* .box{
+/* .box{
   background-color: red;
   color: white;
  }
@@ -632,7 +632,7 @@ transform: translate(100px ,50px);
 
 
 
- /* Center the clock on the page */
+/* Center the clock on the page */
 /* body {
     display: flex;
     justify-content: center;
@@ -671,16 +671,76 @@ transform: translate(100px ,50px);
 
 
 
+/* .hacking_simiulator {
+  width: 50vw;
+  height: 50vh;
+  background-color: black;
+  transform: translate(50%, 50%);
+}
+
+.btn {
+  width: 10%;
+  height: 10%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  transform: translate(250%, 420%);
+}
+
+.cursor {
+
+  color: greenyellow;
+  font-weight: bold;
+  animation: blink 0.7s infinite;
+}
 
 
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
 
+  50% {
+    opacity: 0;
+  }
 
+  100% {
+    opacity: 1;
+  }
+}
+ */
 
+.hacking_simiulator {
+  width: 50vw;
+  height: 50vh;
+  background-color: black;
+  transform: translate(50%, 50%);
+  font-family: monospace;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
+.content {
+  color: greenyellow;
+}
 
+.btn {
+  width: 10%;
+  height: 10%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  transform: translate(250%, 420%);
+}
 
+.cursor {
+  color: greenyellow;
+  font-weight: bold;
+  animation: blink 0.7s infinite;
+}
 
-
-
-
-
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}

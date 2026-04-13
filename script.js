@@ -1557,12 +1557,160 @@
 
 
 
+// let button = document.querySelector(".btn");
+// let screen = document.querySelector(".hacking_simiulator");
+// let hacking = [
+//     "Initializing hacking",
+//     "Reading your files detected",
+//     "Sending all passwords and personal files to server",
+//     "Cleaning up"
+// ];
+
+
+//  function delay(ms) {
+//     return new Promise(resolve => setTimeout(resolve, ms));
+// }
+
+// async function showBlinking(text) {
+//     let line = document.createElement("div");
+//     screen.appendChild(line);
+
+//     for (let i = 1; i <= 3; i++) {
+//         line.innerHTML = text + ".".repeat(i);
+//         await delay(500);
+//     }
+// }
+ 
+// button.addEventListener("click", async () => {
+
+//     screen.innerHTML = "";
+//     screen.style.color = "greenyellow";
+
+//     let cursor = document.createElement("div");
+//     cursor.innerHTML = "|";
+//     cursor.classList.add("cursor");
+//     screen.appendChild(cursor);
+
+//     for (let i = 0; i < hacking.length; i++) {
+
+//         await showBlinking(`root@hack:~$ ${hacking[i]}`);
+//         await delay(2000);
+
+//         screen.appendChild(cursor); // keep cursor at bottom
+//     }
+
+// });
 
 
 
 
 
+// let button = document.querySelector(".btn");
+// let screen = document.querySelector(".hacking_simiulator");
 
+// let hacking = [
+//     "Initializing hacking",
+//     "Reading your files detected",
+//     "Sending all passwords and personal files to server",
+//     "Cleaning up"
+// ];
 
+// function delay(ms) {
+//     return new Promise(resolve => setTimeout(resolve, ms));
+// }
 
+// async function showBlinking(text) {
+//     let line = document.createElement("div");
+//     screen.appendChild(line);
 
+//     for (let i = 1; i <= 3; i++) {
+//         line.innerHTML = text + ".".repeat(i);
+//         await delay(500);
+//     }
+// }
+
+// button.addEventListener("click", async () => {
+
+//     screen.innerHTML = "";
+
+//     for (let i = 0; i < hacking.length; i++) {
+//         await showBlinking(`root@hack:~$ ${hacking[i]}`);
+//         await delay(2000);
+//     }
+
+// });
+
+// let button = document.querySelector(".btn");
+// let screen = document.querySelector(".content");
+
+// let hacking = [
+//     "Initializing hacking",
+//     "Reading your files detected",
+//     "Sending all passwords and personal files to server",
+//     "Cleaning up"
+// ];
+
+// function delay(ms) {
+//     return new Promise(resolve => setTimeout(resolve, ms));
+// }
+
+// async function showBlinking(text) {
+//     let line = document.createElement("div");
+//     screen.appendChild(line);
+
+//     for (let i = 1; i <= 3; i++) {
+//         line.innerHTML = text + ".".repeat(i);
+//         await delay(500);
+//     }
+// }
+
+// button.addEventListener("click", async () => {
+
+//     screen.innerHTML = "";
+
+//     for (let i = 0; i < hacking.length; i++) {
+//         await showBlinking(`root@hack:~$ ${hacking[i]}`);
+//         await delay(2000);
+//     }
+
+// });
+
+let button = document.querySelector(".btn");
+let screen = document.querySelector(".content");
+let container = document.querySelector(".hacking_simiulator");
+
+let cursor = document.querySelector(".cursor"); // IMPORTANT
+
+let hacking = [
+    "Initializing hacking",
+    "Reading your files detected",
+    "Sending all passwords and personal files to server",
+    "Cleaning up"
+];
+
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function showBlinking(text) {
+    let line = document.createElement("div");
+    screen.appendChild(line);
+
+    for (let i = 1; i <= 3; i++) {
+        line.innerHTML = text + ".".repeat(i);
+        await delay(500);
+    }
+}
+
+button.addEventListener("click", async () => {
+
+    screen.innerHTML = ""; // only text clears
+
+    for (let i = 0; i < hacking.length; i++) {
+        await showBlinking(`root@hack:~$ ${hacking[i]}`);
+        await delay(2000);
+
+        container.appendChild(cursor); // ALWAYS keep cursor at bottom
+    }
+
+});
