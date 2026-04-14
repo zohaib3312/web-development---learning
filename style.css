@@ -722,6 +722,7 @@ transform: translate(100px ,50px);
 
 .content {
   color: greenyellow;
+  font-weight: 600;
 }
 
 .btn {
@@ -735,12 +736,22 @@ transform: translate(100px ,50px);
 
 .cursor {
   color: greenyellow;
-  font-weight: bold;
+
+  font-weight: bolder;
+
   animation: blink 0.7s infinite;
 }
 
 @keyframes blink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

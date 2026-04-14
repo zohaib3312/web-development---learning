@@ -1537,42 +1537,98 @@
 // getUsers();
 
 
-let button = document.querySelector(".btn");
-let screen = document.querySelector(".content");
+// let button = document.querySelector(".btn");
+// let screen = document.querySelector(".content");
+// let container = document.querySelector(".hacking_simiulator");
+
+// let cursor = document.querySelector(".cursor"); // IMPORTANT
+
+// let hacking = [
+//     "Initializing hacking",
+//     "Reading your files detected",
+//     "Sending all passwords and personal files to server",
+//     "Cleaning up"
+// ];
+
+// function delay(ms) {
+//     return new Promise(resolve => setTimeout(resolve, ms));
+// }
+
+// async function showBlinking(text) {
+//     let line = document.createElement("div");
+//     screen.appendChild(line);
+
+//     for (let i = 1; i <= 3; i++) {
+//         line.innerHTML = text + ".".repeat(i);
+//         await delay(500);
+//     }
+// }
+
+// button.addEventListener("click", async () => {
+
+//     screen.innerHTML = ""; // only text clears
+
+//     for (let i = 0; i < hacking.length; i++) {
+//         await showBlinking(`root@hack:~$ ${hacking[i]}`);
+//         await delay(2000);
+
+//         container.appendChild(cursor); // ALWAYS keep cursor at bottom
+//     }
+
+// });
+
+
+
 let container = document.querySelector(".hacking_simiulator");
+let screen = document.querySelector(".content");
+let btn = document.querySelector(".btn");
+let cursor = document.querySelector(".cursor")
 
-let cursor = document.querySelector(".cursor"); // IMPORTANT
-
-let hacking = [
+let hackingText = [
     "Initializing hacking",
     "Reading your files detected",
     "Sending all passwords and personal files to server",
     "Cleaning up"
+
 ];
 
-function delay(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+
+function dely(ms) {
+    return new Promise((res) => setTimeout(res, ms))
 }
 
-async function showBlinking(text) {
+
+async function blinkingeffect(text) {
+
     let line = document.createElement("div");
     screen.appendChild(line);
+    for (let i = 0; i <= 3; i++) {
 
-    for (let i = 1; i <= 3; i++) {
-        line.innerHTML = text + ".".repeat(i);
-        await delay(500);
+        line.innerHTML = text + ".".repeat(i)
+        await dely(500)
     }
+
+
 }
 
-button.addEventListener("click", async () => {
+btn.addEventListener("click", async () => {
 
-    screen.innerHTML = ""; // only text clears
+    for (let i = 0; i < hackingText.length; i++) {
 
-    for (let i = 0; i < hacking.length; i++) {
-        await showBlinking(`root@hack:~$ ${hacking[i]}`);
-        await delay(2000);
+        
 
+        await blinkingeffect(`root@hack:~$ ${hackingText[i]}`);
+       
+        await dely(2000)
         container.appendChild(cursor); // ALWAYS keep cursor at bottom
     }
 
-});
+})
+
+
+
+
+
+
+
+
