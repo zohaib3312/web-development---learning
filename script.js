@@ -1577,58 +1577,70 @@
 
 // });
 
+// let container = document.querySelector(".hacking_simiulator");
+// let screen = document.querySelector(".content");
+// let btn = document.querySelector(".btn");
+// let cursor = document.querySelector(".cursor")
+
+// let hackingText = [
+//     "Initializing hacking",
+//     "Reading your files detected",
+//     "Sending all passwords and personal files to server",
+//     "Cleaning up"
+
+// ];
 
 
-let container = document.querySelector(".hacking_simiulator");
-let screen = document.querySelector(".content");
-let btn = document.querySelector(".btn");
-let cursor = document.querySelector(".cursor")
-
-let hackingText = [
-    "Initializing hacking",
-    "Reading your files detected",
-    "Sending all passwords and personal files to server",
-    "Cleaning up"
-
-];
+// function dely(ms) {
+//     return new Promise((res) => setTimeout(res, ms))
+// }
 
 
-function dely(ms) {
-    return new Promise((res) => setTimeout(res, ms))
+// async function blinkingeffect(text) {
+
+//     let line = document.createElement("div");
+//     screen.appendChild(line);
+//     for (let i = 0; i <= 3; i++) {
+
+//         line.innerHTML = text + ".".repeat(i)
+//         await dely(500)
+//     }
+
+
+// }
+
+// btn.addEventListener("click", async () => {
+
+//     for (let i = 0; i < hackingText.length; i++) {
+
+
+
+//         await blinkingeffect(`root@hack:~$ ${hackingText[i]}`);
+
+//         await dely(2000)
+//         container.appendChild(cursor); // ALWAYS keep cursor at bottom
+//     }
+
+// })
+
+let a = prompt("Enter your 1st number");
+let b = prompt("Enter your 2st number");
+if (isNaN(a) || isNaN(b)) {
+    throw SyntaxError("Sorry this not allowed")
+
 }
 
-
-async function blinkingeffect(text) {
-
-    let line = document.createElement("div");
-    screen.appendChild(line);
-    for (let i = 0; i <= 3; i++) {
-
-        line.innerHTML = text + ".".repeat(i)
-        await dely(500)
-    }
+let c = parseInt(a) + parseInt(b);
 
 
+console.log(c)
+
+try {
+    console.log(c * x);
+    
+} catch (error) {
+    console.log("error code")
 }
-
-btn.addEventListener("click", async () => {
-
-    for (let i = 0; i < hackingText.length; i++) {
-
-        
-
-        await blinkingeffect(`root@hack:~$ ${hackingText[i]}`);
-       
-        await dely(2000)
-        container.appendChild(cursor); // ALWAYS keep cursor at bottom
-    }
-
-})
-
-
-
-
-
 
 
 
