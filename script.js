@@ -1623,24 +1623,63 @@
 
 // })
 
-let a = prompt("Enter your 1st number");
-let b = prompt("Enter your 2st number");
-if (isNaN(a) || isNaN(b)) {
-    throw SyntaxError("Sorry this not allowed")
+// let a = prompt("Enter your 1st number");
+// let b = prompt("Enter your 2st number");
+// if (isNaN(a) || isNaN(b)) {
+//     throw SyntaxError("Sorry this not allowed")
 
+// }
+
+// let c = parseInt(a) + parseInt(b);
+
+
+// console.log(c)
+
+// try {
+//     console.log(c * x);
+    
+// } catch (error) {
+//     console.log("error code")
+// }
+
+
+// What you need to build:
+// A function that takes two numbers and divides them. But if someone passes zero as the second number, you throw a custom error.
+
+
+
+// let divide = (numw1 , num2) =>{
+// if (num2 === 0) {
+//     throw new Error("This is not allowed");
+// }
+
+// return numw1 / num2;
+// }
+
+
+// try {
+// let result = divide(25,0);    
+// console.log(result)    
+// } catch (error) {
+//     console.log(error.message)
+// }
+
+
+
+let calcualtion = (num1 , num2) =>{
+if (num2 === 0) {
+    throw new Error("This is not allowed");
 }
 
-let c = parseInt(a) + parseInt(b);
+return num1 * num2;
+}
 
-
-console.log(c)
 
 try {
-    console.log(c * x);
-    
+let result = calcualtion(25,0);    
+console.log(result)    
 } catch (error) {
-    console.log("error code")
+    console.log(error.message)
+}finally{
+    console.log("calculation attempted")
 }
-
-
-
